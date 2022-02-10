@@ -27,11 +27,12 @@ header h2 {
     font-weight: 300;
     font-size: 18px;
     color: black;
-    font-style: italic;
+	font-style: italic;
 	text-align: center;
 	margin-bottom: 10px;
 	margin-top: 30px;
 }
+
 
 header nav ul {
     display: block;
@@ -50,9 +51,10 @@ header nav ul li {
 header nav ul li a {
     font-family: arial;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     color: black;
     text-decoration: none; 
+	justify-content: center;
 }
 
 .andmed{
@@ -106,8 +108,8 @@ table.test img {
     -moz-flex-basis: 300px;
     flex-basis: 300px;
     margin: 30px;
-    margin-bottom: 60px;
-    margin-top: 60px;
+	margin-bottom: 60px;
+	margin-top: 60px;
     position: relative;
     text-align: center;
 	
@@ -129,14 +131,15 @@ table.test img {
     width: 300px;
 	height: 300px;
 	border-radius: 50%;
+	
 }
 
 footer {
     width: calc(100% - 10px);
     padding: 10px 10px;
     margin-top: 20px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
     background-color: grey;
     overflow: hidden; 
 }
@@ -144,7 +147,7 @@ footer {
 .footer-sm {
     width: 50px;
     float: right;
-    margin-right: 20px;
+	margin-right: 20px;
 }
 
 .footer-sm img {
@@ -160,9 +163,10 @@ footer {
 	font-size: 16px;
 }
 
+
 .post-header {
-  color: white;
-  font-weight: 600;
+	  color: white;
+	  font-weight: 600;
   opacity: 0;
   text-align: center;
   padding-top: 0px;
@@ -174,13 +178,12 @@ div.container:hover .post-header {
   opacity: 1;
 }
 
-
 @media only screen and (max-width: 950px) {
-    table.test img {
+	table.test img {
 		display: none;
 	}
 	
-    header .header-banner {
+	  header .header-banner {
         height: calc(100vh - 400px);
     }
     
@@ -196,7 +199,7 @@ div.container:hover .post-header {
     header nav ul li {
         padding: 5px 10px;
     }
-    header nav ul li a {
+	header nav ul li a {
     font-family: arial;
     font-weight: 300;
     font-size: 16px;
@@ -235,9 +238,8 @@ hr {
 }
 }
 
-
-
 @media only screen and (min-width: 950px) {
+	
 	header nav ul li a {
     font-family: arial;
     font-weight: 300;
