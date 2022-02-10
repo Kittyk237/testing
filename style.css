@@ -18,6 +18,8 @@ header h1 {
     color: black;
     line-height: 30px;
 	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 
 header h2 {
@@ -25,8 +27,10 @@ header h2 {
     font-weight: 300;
     font-size: 18px;
     color: black;
-	font-style: italic;
+    font-style: italic;
 	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
 
 header nav ul {
@@ -51,25 +55,13 @@ header nav ul li a {
     text-decoration: none; 
 }
 
-@media only screen and (max-width: 950px) {
-    
-    header .header-banner {
-        height: calc(100vh - 400px);
-    }
-    
-    header h1 {
-        font-size: 40px;
-    }
-    
-    header h2 {
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    
-    header nav ul li {
-        padding: 10px 20px;
-    }
-    
+.andmed{
+    font-family: arial;
+    font-weight: 300;
+    font-size: 50px;
+    color: black;
+	line-height: 40px;
+	margin-left: 30px;
 }
 
 
@@ -110,10 +102,12 @@ table.test img {
 }
 
 .gallery-image {
-    -webkit-flex-basis: 330px;
-    -moz-flex-basis: 330px;
-    flex-basis: 330px;
-    margin: 10px;
+    -webkit-flex-basis: 300px;
+    -moz-flex-basis: 300px;
+    flex-basis: 300px;
+    margin: 30px;
+    margin-bottom: 60px;
+    margin-top: 60px;
     position: relative;
     text-align: center;
 	
@@ -132,15 +126,17 @@ table.test img {
 }
 
 .gallery-image img {    
-    width: 330px;
-	height: 330px;
+    width: 300px;
+	height: 300px;
 	border-radius: 50%;
 }
 
 footer {
-    width: calc(100% - 80px);
-    padding: 40px 40px;
+    width: calc(100% - 10px);
+    padding: 10px 10px;
     margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
     background-color: grey;
     overflow: hidden; 
 }
@@ -148,6 +144,7 @@ footer {
 .footer-sm {
     width: 50px;
     float: right;
+    margin-right: 20px;
 }
 
 .footer-sm img {
@@ -163,15 +160,9 @@ footer {
 	font-size: 16px;
 }
 
-@media only screen and (max-width: 950px) {
-	table.test img {
-		display: none;
-	}
-}
-
 .post-header {
-	  color: white;
-	  font-weight: 600;
+  color: white;
+  font-weight: 600;
   opacity: 0;
   text-align: center;
   padding-top: 0px;
@@ -182,3 +173,82 @@ div.container:hover .post-header {
 	  padding-top: 40px;
   opacity: 1;
 }
+
+
+@media only screen and (max-width: 950px) {
+    table.test img {
+		display: none;
+	}
+	
+    header .header-banner {
+        height: calc(100vh - 400px);
+    }
+    
+    header h1 {
+        font-size: 36px;
+    }
+    
+    header h2 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    
+    header nav ul li {
+        padding: 5px 10px;
+    }
+    header nav ul li a {
+    font-family: arial;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    text-decoration: none; 
+	justify-content: center;
+}
+
+table {
+	padding: 0px 20px 0px 20px;
+}
+td {
+	padding: 20px;
+}
+.meie {
+    font-family: arial;
+    font-weight: 300px;
+    font-size: 28px;
+	margin-left: 40px;
+	margin-top: 70px;
+	margin-bottom: 0px;
+    color: black;
+    text-align: left;
+    
+}
+header .header-banner {
+    width: 100%;
+    height: calc(100vh - 400px);
+}
+hr {
+	border: solid;
+	color: black;
+    width: 30%;
+    margin-bottom: 5px;
+
+}
+}
+
+
+
+@media only screen and (min-width: 950px) {
+	header nav ul li a {
+    font-family: arial;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+    text-decoration: none; 
+	justify-content: center;
+}
+hr {
+	display: none;
+}
+	
+}
+
